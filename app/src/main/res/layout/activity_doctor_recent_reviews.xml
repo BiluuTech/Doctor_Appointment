@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Doctor.DoctorRecentReviewsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recent_reviews_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/appBarLayout2"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/message_box_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/appBarLayout2"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/colorDarkGreen"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/no_appointment_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Reviews yet !"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stay Connected"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

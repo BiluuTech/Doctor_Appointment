@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Admin.AdminHomeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewpager_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/doctor_admin_list_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager_image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/viewpager_cardview"
+        app:layout_constraintEnd_toEndOf="@id/viewpager_cardview"
+        app:layout_constraintStart_toStartOf="@id/viewpager_cardview"
+        app:layout_constraintTop_toTopOf="@id/viewpager_cardview"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctor_admin_list_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpager_cardview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

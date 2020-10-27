@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "788185353465",
+    "firebase_url": "https://medicine-prescription-20f1f.firebaseio.com",
+    "project_id": "medicine-prescription-20f1f",
+    "storage_bucket": "medicine-prescription-20f1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788185353465:android:adcbf0c567a3101fcd2628",
+        "android_client_info": {
+          "package_name": "app.biluutech.medicineprescription"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788185353465-9iqgt2t1tkdqo5a7et0vk9bglpmt8aaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.biluutech.medicineprescription",
+            "certificate_hash": "91d358f202b1b18a7a051ed76c6fefe06ed6a9fa"
+          }
+        },
+        {
+          "client_id": "788185353465-t5uni1edjsk2ugm1fctkeedt012tahno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdt-d1FboXaQ_HIGiwgIh9bG48huH0UTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788185353465-t5uni1edjsk2ugm1fctkeedt012tahno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

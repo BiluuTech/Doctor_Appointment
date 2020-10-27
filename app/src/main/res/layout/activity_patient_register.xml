@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_patient_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/register_applogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/patient_register_form_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_applogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Patient Registration"
+            android:textColor="@color/colorDarkGreen"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/patient_register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patient_register_form_TV"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_design_2"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/colorDarkGreen"
+            android:textColorHint="@color/colorDarkGreen"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/patient_register_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patient_register_username"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_design_2"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="20dp"
+            android:textColor="@color/colorDarkGreen"
+            android:textColorHint="@color/colorDarkGreen"
+            android:textSize="19sp" />
+
+
+        <EditText
+            android:id="@+id/patient_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patient_register_age"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_design_2"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColor="@color/colorDarkGreen"
+            android:textColorHint="@color/colorDarkGreen"
+            android:textSize="19sp" />
+
+
+        <EditText
+            android:id="@+id/patient_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patient_register_email"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_design_2"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="@color/colorDarkGreen"
+            android:textColorHint="@color/colorDarkGreen"
+            android:textSize="19sp" />
+        
+        <RadioGroup
+            android:id="@+id/radio_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/patient_register_password"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textSize="19sp"
+                android:textColor="@color/colorDarkGreen"
+                />
+
+            <RadioButton
+                android:id="@+id/radi0_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="19sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorDarkGreen"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="19sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorDarkGreen"
+                />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/patient_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_buttons"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_design_1"
+            android:padding="17dp"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/or_statement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_below="@+id/patient_register_btn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorDarkGreen"
+            />
+
+        <Button
+            android:id="@+id/patient_already_have_account_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/or_statement"
+            android:background="@drawable/button_design_2"
+            android:layout_marginTop="10dp"
+            android:text="Already have an account?"
+            android:textColor="@color/colorDarkGreen"
+            android:textAllCaps="false"
+            android:layout_marginBottom="30dp"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>

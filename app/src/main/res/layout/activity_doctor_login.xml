@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root_doctor_login"
+        >
+
+
+        <ImageView
+            android:id="@+id/img_seller"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bggreen1" />
+
+        <TextView
+            android:id="@+id/doctor_login_form_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_seller"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Doctor Login"
+            android:textColor="@color/colorDarkGreen"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/doctor_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_login_form_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_design_2"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorDarkGreen"
+            android:textColor="@color/colorDarkGreen"
+            android:padding="15dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/doctor_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_login_email"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_design_2"
+            android:hint="Password"
+            android:textColorHint="@color/colorDarkGreen"
+            android:textColor="@color/colorDarkGreen"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/doctor_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_login_password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_design_1"
+            android:text="Login Doctor"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/or_statement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_below="@+id/doctor_login_btn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorDarkGreen"
+            />
+
+        <Button
+            android:id="@+id/doctor_dont_have_account_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/or_statement"
+            android:background="@drawable/button_design_2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:text="Don't have an account?"
+            android:textColor="@color/colorDarkGreen"
+            android:textAllCaps="false"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
